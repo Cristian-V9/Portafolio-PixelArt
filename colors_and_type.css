@@ -1,0 +1,280 @@
+/* =========================================================
+   Cristian Vargas — Design System
+   colors_and_type.css
+   Tokens de diseno: color, tipografia, espaciado, radios, movimiento.
+   Importar primero; todo lo demas construye sobre estas variables.
+   ========================================================= */
+
+/* ---------- Fuentes ----------
+   Doto  → titulos, labels, nav, numeracion (display)
+   Lora  → cuerpo de texto (body)
+   ----------------------------------------------------- */
+@font-face {
+  font-family: "Doto";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/Doto-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Doto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/Doto-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Doto";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("fonts/Doto-900.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/Lora-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("fonts/Lora-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("fonts/Lora-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("fonts/Lora-400-italic.woff2") format("woff2");
+}
+
+:root {
+  /* ---------- Color — escala base ----------
+     Segun el manual de marca y el logo CV.
+     Cinco azules del navy mas profundo al azul electrico. */
+  --navy-950: #040440; /* azul muy oscuro — el fondo de la vela */
+  --navy-900: #07004d; /* casi el mas oscuro */
+  --navy-800: #0a0a52; /* superficie oscura */
+  --navy-700: #000078; /* azul real */
+  --navy-600: #181088; /* indigo principal de marca */
+  --navy-500: #0205b4; /* azul medio */
+  --blue-500: #0011e1; /* electrico — links y estado activo */
+  --blue-400: #0023ed; /* mas claro, hover */
+
+  /* Lavanda — texto secundario, superficies suaves, la niebla */
+  --lavender-100: #eff0ff;   /* lavanda casi blanco, fondo alternativo */
+  --lavender-200: #d6daff;
+  --lavender-300: #b0b8ff;   /* lavanda principal — texto secundario sobre oscuro */
+  --lavender-400: #8a8cc8;
+  --lavender-500: #705890;   /* mas profundo, tarjeta violeta */
+  --lavender-600: #4a3d6e;
+
+  /* Crema y papel — superficies claras */
+  --paper:      #ffffff;
+  --cream-100:  #f6f4ef;     /* fondo de pagina claro */
+  --cream-200:  #e8e8e0;     /* footer y banda */
+  --cream-300:  #d8d4c4;
+
+  /* Amarillo y ambar — unico acento calido (llama del logo, CTA, numeracion) */
+  --amber-300:  #ffd45e;     /* amarillo primario brillante */
+  --amber-400:  #f2a65e;     /* ambar de la llama del logo */
+  --amber-500:  #e08a2e;     /* ambar presionado o activo */
+  --ember-500:  #eb564b;     /* rojo anaranjado de las chispas del logo */
+
+  /* Superficies e tinta semantica ------------------ */
+  --surface-page:     var(--cream-100);
+  --surface-card:     var(--paper);
+  --surface-band:     var(--cream-200);
+  --surface-dark:     var(--navy-950);
+  --surface-dark-alt: var(--navy-800);
+  --surface-feature-violet: var(--lavender-500);
+  --surface-feature-navy:   var(--navy-700);
+
+  --ink-strong:   var(--navy-950);  /* texto principal sobre claro */
+  --ink:          var(--navy-600);  /* nav y enfasis sobre claro */
+  --ink-muted:    var(--lavender-500);
+  --ink-on-dark:  var(--lavender-100);
+  --ink-on-dark-muted: var(--lavender-300);
+
+  --accent:       var(--amber-300);
+  --accent-warm:  var(--amber-400);
+
+  --border-light: rgba(24, 16, 136, 0.18);
+  --border-dark:  rgba(176, 184, 255, 0.22);
+
+  /* Anillo de foco (accesibilidad) */
+  --focus-ring: 0 0 0 3px rgba(255, 212, 94, 0.55);
+
+  /* ---------- Tipografia — familias ---------- */
+  --font-display: "Doto", "Courier New", ui-monospace, monospace;
+  --font-body:    "Lora", "Iowan Old Style", Georgia, "Times New Roman", serif;
+
+  /* ---------- Tipografia — escala (Major Third 1.250 en cuerpo, mas amplia en display) ---------- */
+  --fs-display-xl: clamp(2.75rem, 1.6rem + 4.6vw, 4.5rem);  /* hero */
+  --fs-display-lg: clamp(2.25rem, 1.6rem + 2.4vw, 3.25rem); /* abre seccion */
+  --fs-display-md: clamp(1.5rem,  1.2rem + 1.2vw, 2rem);     /* titulo de tarjeta */
+  --fs-display-sm: 1.125rem;                                 /* eyebrow y label */
+
+  --fs-body-lg: 1.125rem;    /* 18px lead */
+  --fs-body:    1rem;         /* 16px por defecto */
+  --fs-body-sm: 0.9375rem;   /* 15px secundario */
+  --fs-meta:    0.8125rem;   /* 13px caption y footer */
+  --fs-micro:   0.6875rem;   /* 11px etiqueta y badge */
+
+  /* ---------- Tipografia — interlineado y tracking ---------- */
+  --lh-display: 1.05;
+  --lh-heading: 1.15;
+  --lh-body:    1.65;
+  --lh-tight:   1.3;
+
+  --tracking-display: 0.04em;  /* Doto necesita algo de aire */
+  --tracking-label:   0.08em;  /* versalitas y nav */
+  --tracking-body:    0;
+
+  /* ---------- Espaciado — rampa de 4px ---------- */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ---------- Radios (mayormente cuadrados; redondeo moderado solo en tarjetas e inputs) ---------- */
+  --radius-0: 0px;
+  --radius-1: 2px;     /* amigable con pixel art */
+  --radius-2: 4px;
+  --radius-3: 8px;
+  --radius-4: 12px;    /* tarjetas */
+  --radius-pill: 999px;
+
+  /* ---------- Sombras ----------
+     Tintadas de navy, nunca gris neutro.
+     Las variantes inset se usan para inputs hundidos y estados presionados. */
+  --shadow-sm:  0 1px 0 rgba(4, 4, 64, 0.06);
+  --shadow-md:  0 6px 16px -8px rgba(4, 4, 64, 0.28),
+                0 2px 4px -2px rgba(4, 4, 64, 0.12);
+  --shadow-lg:  0 18px 40px -18px rgba(4, 4, 64, 0.45),
+                0 4px 10px -4px rgba(4, 4, 64, 0.18);
+  --shadow-inset: inset 0 1px 0 rgba(4, 4, 64, 0.10);
+  --shadow-press: inset 0 2px 0 rgba(4, 4, 64, 0.18);
+
+  /* ---------- Movimiento ---------- */
+  --ease-out:    cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --dur-1: 120ms;
+  --dur-2: 220ms;
+  --dur-3: 360ms;
+  --dur-4: 600ms;
+
+  /* ---------- Layout ---------- */
+  --container-max: 1120px;
+  --container-narrow: 720px;
+  --nav-height: 64px;
+}
+
+/* =========================================================
+   Estilos de elementos semanticos
+   ========================================================= */
+html { color-scheme: light; }
+body {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--ink-strong);
+  background: var(--surface-page);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, h2, h3, h4, h5, .display, .eyebrow, .nav-link {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: var(--tracking-display);
+  line-height: var(--lh-display);
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+h1, .h1 {
+  font-size: var(--fs-display-xl);
+  font-weight: 400;
+}
+h2, .h2 {
+  font-size: var(--fs-display-lg);
+  line-height: var(--lh-heading);
+}
+h3, .h3 {
+  font-size: var(--fs-display-md);
+  line-height: var(--lh-heading);
+}
+h4, .h4 {
+  font-size: var(--fs-display-sm);
+  letter-spacing: var(--tracking-label);
+}
+
+p, li {
+  font-family: var(--font-body);
+  font-size: var(--fs-body);
+  line-height: var(--lh-body);
+  color: var(--ink-strong);
+  text-wrap: pretty;
+}
+p.lead, .lead {
+  font-size: var(--fs-body-lg);
+  color: var(--ink-strong);
+}
+p.muted, .muted, small {
+  color: var(--ink-muted);
+  font-size: var(--fs-body-sm);
+}
+.eyebrow {
+  font-family: var(--font-display);
+  font-size: var(--fs-meta);
+  letter-spacing: var(--tracking-label);
+  text-transform: uppercase;
+  color: var(--accent-warm);
+}
+
+a {
+  color: var(--blue-500);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+  transition: color var(--dur-1) var(--ease-out);
+}
+a:hover { color: var(--blue-400); }
+a:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+  border-radius: var(--radius-2);
+}
+
+::selection { background: var(--amber-300); color: var(--navy-950); }
+
+/* utilidad para bandas oscuras — los colores de texto e links se invierten correctamente */
+.on-dark {
+  color: var(--ink-on-dark);
+}
+.on-dark h1, .on-dark h2, .on-dark h3, .on-dark h4,
+.on-dark .display, .on-dark .nav-link {
+  color: var(--ink-on-dark);
+}
+.on-dark p, .on-dark li { color: var(--ink-on-dark); }
+.on-dark .muted, .on-dark p.muted { color: var(--ink-on-dark-muted); }
+.on-dark a { color: var(--lavender-300); }
+.on-dark a:hover { color: var(--amber-300); }
+.on-dark .eyebrow { color: var(--amber-300); }

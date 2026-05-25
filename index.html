@@ -1,0 +1,388 @@
+<!-- Main del sitio-->
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cristian Vargas — Pixel artist & game developer</title>
+  <link rel="stylesheet" href="colors_and_type.css">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="assets/logo-cv.png" type="image/png">
+</head>
+<body>
+
+<!-- ============== NAV ============== -->
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__brand" href="#inicio" data-route-link="inicio">
+      <img src="assets/logo-cv.png" alt="">
+      <span>Cristian Vargas</span>
+    </a>
+    <nav>
+      <ul class="nav__links">
+        <li><a class="nav__link" href="#inicio"      data-route-link="inicio">Inicio</a></li>
+        <li><a class="nav__link" href="#proyectos"   data-route-link="proyectos">Proyectos</a></li>
+        <li><a class="nav__link" href="#sobre-mi"    data-route-link="sobre-mi">Sobre mí</a></li>
+        <li><a class="nav__link" href="#contactame"  data-route-link="contactame">Contáctame</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<!-- ============== INICIO ============== -->
+<section class="route is-active" id="inicio" data-screen-label="Inicio">
+  <div class="container section--hero">
+    <div class="hero">
+      <span class="eyebrow reveal">Indie · Pixel · Terror</span>
+      <h1 class="hero__poetic reveal">Juegos indie donde el miedo vive en el silencio.</h1>
+      <div class="hero__frame reveal">
+        <div class="hero__carousel" aria-label="Paisajes destacados" role="region">
+          <div class="hero__track" id="hero-track">
+            <div class="hero__slide">
+              <img src="assets/img/ls1.png" alt="Paisaje 1">
+            </div>
+            <div class="hero__slide">
+              <img src="assets/img/ls2.png" alt="Paisaje 2">
+            </div>
+            <div class="hero__slide">
+              <img src="assets/img/ls3.png" alt="Paisaje 3">
+            </div>
+            <!-- slide duplicado para loop suave -->
+            <div class="hero__slide">
+              <img src="assets/img/ls1.png" alt="Paisaje 1">
+            </div>
+          </div>
+          <button class="hero__nav hero__nav--prev" id="hero-prev" type="button" aria-label="Paisaje anterior">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="15 18 9 12 15 6"></polyline></svg>
+          </button>
+          <button class="hero__nav hero__nav--next" id="hero-next" type="button" aria-label="Paisaje siguiente">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="9 18 15 12 9 6"></polyline></svg>
+          </button>
+          <div class="hero__dots" id="hero-dots" aria-hidden="true">
+            <button type="button" data-idx="0" aria-label="Ir al paisaje 1"></button>
+            <button type="button" data-idx="1" aria-label="Ir al paisaje 2"></button>
+            <button type="button" data-idx="2" aria-label="Ir al paisaje 3"></button>
+          </div>
+        </div>
+      </div>
+      <div class="hero__ctas reveal">
+        <a class="btn btn--primary" href="#proyectos" data-route-link="proyectos">Conócemos</a>
+        <a class="btn btn--secondary" href="#proyectos" data-route-link="proyectos">Ver más proyectos</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner-poetic">
+    <div class="container--narrow">
+      <h2 class="reveal">Construyo mundos pixelados donde el silencio cuenta más que las palabras.</h2>
+      <p class="reveal">Juegos indie donde la atmósfera es el personaje principal. Terror psicológico, pixel art, narrativa ambiental.</p>
+    </div>
+  </div>
+
+  <div class="container section">
+    <div class="features">
+      <article class="feature-card feature-card--violet reveal">
+        <span class="feature-card__num">01</span>
+        <div>
+          <h3>Pixel Art Minimalista</h3>
+          <p>Escenarios en paletas limitadas que generan volumen e impacto visual. Cada color esculpe el silencio.</p>
+        </div>
+      </article>
+      <article class="feature-card feature-card--navy reveal">
+        <span class="feature-card__num">02</span>
+        <div>
+          <h3>Narrativa Ambiental sin Diálogos</h3>
+          <p>Una experiencia donde el mundo habla por sí solo. La arquitectura, los colores, la atmósfera. El jugador descubre, no se le cuenta.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== PROYECTOS ============== -->
+<section class="route" id="proyectos" data-screen-label="Proyectos">
+  <div class="container section">
+    <div class="section-head">
+      <span class="eyebrow reveal">Proyectos</span>
+      <h2 class="h-section reveal">Mis Proyectos</h2>
+      <p class="lead muted reveal">Juegos indie donde la atmósfera es el personaje principal. Terror psicológico, pixel art, narrativa ambiental.</p>
+    </div>
+
+    <div class="paisajes">
+      <div class="paisaje reveal">
+        <div class="paisaje__frame mid">
+          <img src="assets/img/ls1.png" alt="Paisaje 01">
+        </div>
+        <div class="paisaje__copy">
+          <span class="paisaje__num">PAISAJE 01</span>
+          <h3 class="paisaje__title">Ejemplo de Paisaje 01</h3>
+          <p class="paisaje__desc">Bosques donde la niebla oculta lo que no quieres ver. Cada paso resuena en el silencio.</p>
+        </div>
+      </div>
+
+      <div class="paisaje paisaje--reverse reveal">
+        <div class="paisaje__frame deep">
+          <img src="assets/img/ls2.png" alt="Paisaje 02">
+        </div>
+        <div class="paisaje__copy">
+          <span class="paisaje__num">PAISAJE 02</span>
+          <h3 class="paisaje__title">Ejemplo de Paisaje 02</h3>
+          <p class="paisaje__desc">Ruinas de una civilización olvidada. La arquitectura susurra historias de abandono.</p>
+        </div>
+      </div>
+
+      <div class="paisaje reveal">
+        <div class="paisaje__frame violet">
+          <img src="assets/img/ls3.png" alt="Paisaje 03">
+        </div>
+        <div class="paisaje__copy">
+          <span class="paisaje__num">PAISAJE 03</span>
+          <h3 class="paisaje__title">Ejemplo de Paisaje 03</h3>
+          <p class="paisaje__desc">Espacios liminales entre la realidad y el sueño. Atmósfera onírica, sin puntuación clara.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-head" style="margin-top: var(--space-9)">
+      <span class="eyebrow reveal">Personajes</span>
+      <h2 class="h-section reveal">Quienes habitan mis mundos</h2>
+    </div>
+
+    <div class="personajes">
+      <article class="personaje reveal">
+        <div class="personaje__frame">
+          <img src="assets/img/ch1.png" alt="Personaje 01">
+        </div>
+        <span class="personaje__num">PERSONAJE 01</span>
+        <h4>El Observador</h4>
+        <p>Presente pero nunca completamente visible. Su intención permanece ambigua.</p>
+      </article>
+      <article class="personaje reveal">
+        <div class="personaje__frame personaje__frame--alt">
+          <img src="assets/img/ch2.jpeg" alt="Personaje 02">
+        </div>
+        <span class="personaje__num">PERSONAJE 02</span>
+        <h4>La Sombra</h4>
+        <p>Lo que acecha desde las periferias de la percepción.</p>
+      </article>
+      <article class="personaje reveal">
+        <div class="personaje__frame personaje__frame--deep">
+          <img src="assets/img/ch3.png" alt="Personaje 03">
+        </div>
+        <span class="personaje__num">PERSONAJE 03</span>
+        <h4>El Centinela</h4>
+        <p>El guardián del misterio. Conoce la verdad pero no la revela. Solo observa.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SOBRE MÍ ============== -->
+<section class="route" id="sobre-mi" data-screen-label="Sobre mí">
+  <div class="container section">
+    <div class="section-head">
+      <span class="eyebrow reveal">Sobre mí</span>
+      <h2 class="h-section reveal">Cristian Vargas</h2>
+    </div>
+
+    <div class="about-grid reveal">
+      <div class="about-portrait">
+        <img src="assets/img/perfil.png" alt="Cristian Vargas"> 
+      </div>
+      <div class="about-copy">
+        <h3>Pixel artist · UI/UX · Game developer</h3>
+        <p class="role">Bogotá, Colombia · Estudiante de ingeniería de software</p>
+        <p>Durante los últimos años he desarrollado juegos indie focalizados en terror psicológico, misterio y narrativa ambiental. Mi trabajo combina la precisión técnica del desarrollo con la sensibilidad artística del pixel art, creando experiencias que generan incomodidad estética y profundidad emocional.</p>
+        <p>Especializado en pixel art de atmósfera y narrativa, diseño de UI/UX para juegos indie, desarrollo full-stack en pequeña escala, y experiencias inmersivas de terror psicológico.</p>
+      </div>
+    </div>
+
+    <div class="section--tight">
+      <span class="eyebrow reveal">Stack &amp; herramientas</span>
+      <div class="stack-grid reveal" id="stack">
+      </div>
+    </div>
+
+    <div class="split">
+      <div class="split__col split__col--light reveal">
+        <span class="eyebrow">Valores</span>
+        <h3>Valores Como Dev</h3>
+        <p>Mis valores representan la base de mi trabajo y la manera en la que desarrollo cada proyecto. Busco combinar creatividad, responsabilidad e innovación para crear propuestas visuales con identidad propia.</p>
+        <h4>Especializado en</h4>
+        <ul>
+          <li>Creatividad enfocada en experiencias visuales únicas</li>
+          <li>Compromiso con la calidad y el detalle artístico</li>
+          <li>Innovación en diseño e identidad visual</li>
+          <li>Responsabilidad y cumplimiento en cada desarrollo</li>
+          <li>Enfoque en generar conexión emocional con el público</li>
+        </ul>
+      </div>
+      <div class="split__col split__col--dark reveal on-dark">
+        <span class="eyebrow">Habilidades</span>
+        <h3>Habilidades Como Dev</h3>
+        <p>Mis habilidades reflejan la experiencia y conocimientos que he desarrollado en áreas creativas y digitales — aportando soluciones funcionales, modernas y adaptadas a las necesidades de cada proyecto.</p>
+        <h4>Especializado en</h4>
+        <ul>
+          <li>Diseño UI/UX para videojuegos y proyectos digitales</li>
+          <li>Pixel art aplicado a narrativa y ambientación</li>
+          <li>Desarrollo full-stack en proyectos independientes</li>
+          <li>Creación de experiencias inmersivas y psicológicas</li>
+          <li>Diseño gráfico para publicidad y medios digitales</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CONTÁCTAME ============== -->
+<section class="route" id="contactame" data-screen-label="Contáctame">
+  <div class="container section">
+    <div class="contact-head reveal">
+      <h2 class="h-section">Contáctame</h2>
+      <p class="muted">¿Tienes una idea? ¿Necesitas un pixel artist o game designer? Estoy abierto a colaboraciones.</p>
+    </div>
+
+    <div class="section--tight">
+      <span class="eyebrow reveal">Testimonios</span>
+      <h2 class="h-section reveal" style="margin-bottom: 6px">Lo que dice la gente</h2>
+      <p class="muted reveal">Lo que las personas comentan de mis mundos.</p>
+
+      <div class="testimonios">
+        <article class="testimonial reveal">
+          <p>Sus juegos te atrapan en una atmósfera que no puedes soltar. El pixel art es hipnotizante.</p>
+          <div class="testimonial__by">
+            <div class="testimonial__av">A</div>
+            <div>
+              <div class="testimonial__name">Andi Artesano</div>
+              <div class="testimonial__role">12 Horas Jugadas</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal">
+          <p>La narrativa ambiental te transporta. Sin un solo diálogo, logra contar historias que te persiguen.</p>
+          <div class="testimonial__by">
+            <div class="testimonial__av">M</div>
+            <div>
+              <div class="testimonial__name">Mariela Wesghora</div>
+              <div class="testimonial__role">32 Horas Jugadas</div>
+            </div>
+          </div>
+        </article>
+        <article class="testimonial reveal">
+          <p>Cada mundo se siente como entrar en una pesadilla controlada. Tenebroso y hermoso a la vez.</p>
+          <div class="testimonial__by">
+            <div class="testimonial__av">C</div>
+            <div>
+              <div class="testimonial__name">Cal Calmajulia</div>
+              <div class="testimonial__role">42 Horas Jugadas</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <div class="section--tight">
+      <span class="eyebrow reveal">Form de Contacto</span>
+      <h2 class="h-section reveal" style="margin-bottom: 6px">Cuéntame tu idea</h2>
+      <p class="muted reveal">Responderé en menos de 48 horas.</p>
+
+      <div class="form-wrap reveal">
+        <aside class="form-aside">
+          <h3>Hablemos.</h3>
+          <p>Trabajo en proyectos pequeños, indie y experimentales. Disponible para encargos de pixel art, diseño de UI/UX para juegos, y desarrollo full-stack en pequeña escala.</p>
+          <p>Bogotá, Colombia · GMT-5</p>
+          <div class="channels">
+            <a href="#" aria-label="GitHub"><img src="assets/icons/github.svg" alt=""></a>
+            <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+            <a href="#" aria-label="itch.io"><img src="assets/icons/itch.svg" alt=""></a>
+            <a href="#" aria-label="X"><img src="assets/icons/x.svg" alt=""></a>
+          </div>
+        </aside>
+
+        <form class="form" id="contact-form" novalidate>
+          <div class="form__row">
+            <div class="field" data-field="name">
+              <label for="f-name">Nombre</label>
+              <input class="ctl" type="text" id="f-name" name="name" placeholder="¿Cómo te llamas?" required minlength="2">
+              <span class="hint">Como quieres que te llame.</span>
+              <span class="err">Necesito al menos 2 caracteres.</span>
+            </div>
+            <div class="field" data-field="email">
+              <label for="f-email">Email</label>
+              <input class="ctl" type="email" id="f-email" name="email" placeholder="hola@ejemplo.com" required>
+              <span class="hint">Para responderte directamente.</span>
+              <span class="err">Email inválido — falta @ o el dominio.</span>
+            </div>
+          </div>
+          <div class="field" data-field="subject">
+            <label for="f-subject">Asunto</label>
+            <input class="ctl" type="text" id="f-subject" name="subject" placeholder="¿De qué quieres hablar?" required minlength="4">
+            <span class="hint">Una idea de proyecto, colaboración, etc.</span>
+            <span class="err">Mínimo 4 caracteres.</span>
+          </div>
+          <div class="field" data-field="message">
+            <label for="f-message">Mensaje</label>
+            <textarea class="ctl" id="f-message" name="message" rows="5" placeholder="Cuéntame qué tienes en mente." required minlength="20"></textarea>
+            <span class="hint"><span id="char-count">0</span>/20 caracteres mínimo.</span>
+            <span class="err">Mínimo 20 caracteres para entender bien la idea.</span>
+          </div>
+          <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
+            <button class="btn btn--cta" type="submit">Enviar mensaje</button>
+            <button class="btn btn--secondary" type="reset">Limpiar</button>
+          </div>
+          <div class="form__success" id="form-success">
+            <div class="checkmark">✓</div>
+            <div>
+              <strong style="font-family:var(--font-display);letter-spacing:.04em">Mensaje enviado.</strong>
+              <div style="font-size:13px;color:var(--ink-muted);margin-top:2px">Gracias. Te respondo en menos de 48 horas.</div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============== FOOTER ============== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo-cv.png" alt="">
+      <div>
+        <strong>Cristian Vargas</strong>
+        <small>Pixel artist · UI/UX · Game Developer</small>
+      </div>
+    </div>
+    <div class="footer__col">
+      <h5>Features</h5>
+      <a href="#proyectos" data-route-link="proyectos">Guía Estudios</a>
+      <a href="#proyectos" data-route-link="proyectos">Pro experience</a>
+      <a href="#sobre-mi"  data-route-link="sobre-mi">Integradores</a>
+    </div>
+    <div class="footer__col">
+      <h5>Learn more</h5>
+      <a href="#proyectos" data-route-link="proyectos">Proyectos</a>
+      <a href="#sobre-mi"  data-route-link="sobre-mi">Sobre mí</a>
+      <a href="#sobre-mi"  data-route-link="sobre-mi">Blog</a>
+    </div>
+    <div class="footer__col">
+      <h5>Support</h5>
+      <a href="#contactame" data-route-link="contactame">Contacto</a>
+      <a href="#contactame" data-route-link="contactame">Support</a>
+      <a href="#contactame" data-route-link="contactame">Legal</a>
+    </div>
+    <div class="footer__social">
+      <a href="#" aria-label="GitHub"><img src="assets/icons/github.svg" alt=""></a>
+      <a href="#" aria-label="LinkedIn"><img src="assets/icons/linkedin.svg" alt=""></a>
+      <a href="#" aria-label="X"><img src="assets/icons/x.svg" alt=""></a>
+    </div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
