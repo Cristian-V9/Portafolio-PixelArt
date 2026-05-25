@@ -2,18 +2,18 @@
 (() => {
   /* ---------- 1. iconos y logos del stack tecnologico ---------- */
   const stack = [
-    { src: '../assets/icons/html5.svg',      name: 'HTML5' },
-    { src: '../assets/icons/css3.svg',       name: 'CSS3' },
-    { src: '../assets/icons/javascript.svg', name: 'JavaScript' },
-    { src: '../assets/icons/java.svg',       name: 'Java' },
-    { src: '../assets/icons/python.svg',     name: 'Python' },
-    { src: '../assets/icons/csharp.svg',     name: 'C#' },
-    { src: '../assets/icons/php.svg',        name: 'PHP' },
-    { src: '../assets/icons/mysql.svg',      name: 'MySQL' },
-    { src: '../assets/icons/oracle.svg',     name: 'Oracle' },
-    { src: '../assets/icons/arduino.svg',    name: 'Arduino' },
-    { src: '../assets/icons/selenium.svg',   name: 'Selenium' },
-    { src: '../assets/icons/linux.svg',      name: 'Linux' },
+    { src: 'assets/icons/html5.svg',      name: 'HTML5' },
+    { src: 'assets/icons/css3.svg',       name: 'CSS3' },
+    { src: 'assets/icons/javascript.svg', name: 'JavaScript' },
+    { src: 'assets/icons/java.svg',       name: 'Java' },
+    { src: 'assets/icons/python.svg',     name: 'Python' },
+    { src: 'assets/icons/csharp.svg',     name: 'C#' },
+    { src: 'assets/icons/php.svg',        name: 'PHP' },
+    { src: 'assets/icons/mysql.svg',      name: 'MySQL' },
+    { src: 'assets/icons/oracle.svg',     name: 'Oracle' },
+    { src: 'assets/icons/arduino.svg',    name: 'Arduino' },
+    { src: 'assets/icons/selenium.svg',   name: 'Selenium' },
+    { src: 'assets/icons/linux.svg',      name: 'Linux' },
   ];
   const stackEl = document.getElementById('stack');
   if (stackEl) {
