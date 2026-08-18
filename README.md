@@ -1,49 +1,50 @@
-# Portafolio PixelArt — Cristian Vargas
+[English](README.md) | [Español](README.es.md)
  
-Sitio web de portafolio en HTML, CSS y JavaScript para mostrar proyectos de pixel art y desarrollo de juegos indie.
+# Portafolio-PixelArt
+ 
 Web portfolio site built with HTML, CSS and JavaScript to showcase pixel art and indie game projects.
+Static single-page app, no frameworks or external dependencies.
  
-Single-page app estática, sin frameworks ni dependencias externas.
+## Features
  
-## Características
- 
-- **Navegación por rutas con hash** (`#inicio`, `#proyectos`, `#sobre-mi`, `#contactame`) sin recargar la página.
-- **Carrusel hero** de paisajes destacados, con controles manuales y navegación por teclado.
-- **Animaciones de entrada (reveal)** usando `IntersectionObserver`, respetando `prefers-reduced-motion`.
-- **Formulario de contacto** con validación en tiempo real (nombre, email, asunto, mensaje).
-- **Sección de stack tecnológico** generada dinámicamente desde un arreglo de íconos.
-- Diseño responsive con paleta y tipografía personalizadas (`colors_and_type.css`).
-## Estructura del proyecto
+- Hash-based route navigation (`#inicio`, `#proyectos`, `#sobre-mi`, `#contactame`) without page reloads
+- Hero carousel of featured landscapes, with manual controls and keyboard navigation
+- Reveal animations on scroll using `IntersectionObserver`, respecting `prefers-reduced-motion`
+- Contact form with real-time validation (name, email, subject, message)
+- Tech stack section rendered dynamically from an icon list
+- Responsive design with custom color palette and typography (`colors_and_type.css`)
+## Project structure
  
 ```
-├── index.html            # Estructura principal del sitio
-├── app.js                # Lógica: routing, carrusel, animaciones, validación de formulario
-├── styles.css             # Estilos generales
-├── colors_and_type.css    # Variables de color y tipografía
-├── assets/                 # Imágenes, íconos y logo
-└── fonts/                  # Tipografías locales
+├── index.html            # Main site structure
+├── app.js                # Logic: routing, carousel, animations, form validation
+├── styles.css             # General styles
+├── colors_and_type.css    # Color and typography variables
+├── assets/                 # Images, icons and logo
+└── fonts/                  # Local fonts
 ```
  
-## Cómo verlo localmente
+## Running locally
  
-No requiere instalación ni dependencias. Basta con clonar el repo y abrir `index.html` en el navegador:
+No installation or dependencies required. Clone the repo and open `index.html` in the browser:
  
 ```bash
 git clone https://github.com/Cristian-V9/Portafolio-PixelArt.git
 cd Portafolio-PixelArt
 ```
  
-Luego abre `index.html` directamente, o sirve la carpeta con un servidor local, por ejemplo:
+Then open `index.html` directly, or serve the folder with a local server:
  
 ```bash
 npx serve .
 ```
  
-## Notas / pendientes
+## Notes / pending
  
-- El formulario de contacto solo valida en el cliente; **no envía el mensaje a ningún servidor** todavía (falta conectarlo a un backend o a un servicio como Formspree/EmailJS).
-- Los enlaces a redes sociales (GitHub, LinkedIn, itch.io, X) están como placeholders y deben actualizarse con las URLs reales.
-- Los testimonios mostrados son de ejemplo (contenido de demostración para el portafolio).
-## Licencia
+- The contact form only validates on the client; it does not send the message to any server yet (needs a backend or a service like Formspree/EmailJS).
+- Social links (GitHub, LinkedIn, itch.io, X) are placeholders and should be updated with real URLs.
+- The testimonials shown are example content for portfolio demonstration purposes.
+## License
  
-Este proyecto aún no tiene licencia definida.
+This project does not have a defined license yet.
+ .
